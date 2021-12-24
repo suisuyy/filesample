@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>file samples</title>
 </head>
+
 <body>
     <h1>
         file samples
     </h1>
-        <div id="audiodiv">
-            <h2>audio</h2>
-            <audio controls src="./audio/audio_700kb.mp3">mp3 700kb</audio>
-        </div>
-        <div id="videodiv">
-            <h2>video</h2>
-            <video controls src="./video/video_7mb.mp4">small mp4 7MB</video>
-        </div>
-        <h2></h2>
-        <h2></h2>
+    <div id="docdiv">
+        <h2>doc</h2>
+        <ol>
+            <li>
+                <a href="./doc/alice_1mb.epub">alice_1mb.epub</a>
+            </li>
+            <li>
+                <a href="./doc/alice_3mb.pdf">alice_3mb.pdf</a>
+            </li>
+            <li>
+                
+            </li>
+        </ol>
 
-    
+    </div>
+    <div id="audiodiv">
+        <h2>audio</h2>
+        <audio controls src="./audio/audio_700kb.mp3">mp3 700kb</audio>
+    </div>
+    <div id="videodiv">
+        <h2>video</h2>
+        <video controls src="./video/video_7mb.mp4">small mp4 7MB</video>
+        <p>with subtitls</p>
+        <video controls src="./video/video_4mb.mp4">
+            <track kind="subtitles" srclang="en" src="./video/subtitles-en.vtt" />
+            <track default kind="subtitles" srclang="zh" src="./video/subtitles-zh-CN.vtt" />
+
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+    </div>
+
+
+    <h2></h2>
+    <h2></h2>
+
+
 </body>
+
 </html>
